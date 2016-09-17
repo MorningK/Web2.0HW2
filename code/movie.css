@@ -1,0 +1,136 @@
+body {
+    background-image: url("../pic/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#banner {
+    background-repeat: repeat-x;
+    height: 50px;
+    background-image: url("../pic/bannerbackground.png");
+}
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#main {
+    width: 800px;
+    height: 100%;
+    /* centered horizontally within the page */
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid gray;
+    overflow: auto;
+    position: relative;
+}
+
+#left {
+    width: 550px;
+    margin: 0px;
+}
+
+#rotten {
+    background-image: url("../pic/rottenbackground.png");
+    background-repeat: repeat-x;
+    height: 83px;
+}
+
+#rating {
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+
+#reviews {
+    position: relative;
+    bottom: 20px;
+    color: white;
+}
+
+#quoteLeft {
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+}
+
+#quoteRight {
+    /* 左边和右边部分需要并列排放 */
+    width: 47%;
+    /* 2+47+2 = 51 */
+    margin-left: 51%;
+}
+
+.quote {
+    border: 2px solid gray;
+    background-color: #E1D697;
+    /*Paragraphs that are part of movie reviews should be sized large enough 
+    to contain all of their content, including any floating content*/
+    overflow: auto;
+    padding: 8px;
+}
+
+.quote q {
+    font-weight: bold;
+}
+
+.pic {
+    /* Text wraps around these images as needed. */
+    float: left;
+    margin-right: 5px;
+}
+
+.reviewer {
+    margin-bottom: 3em;
+}
+
+.publication {
+    font-style: italic;
+}
+
+#right {
+    /* overview在右半部份，然而在html里却写左半部分的前面，需要进行处理  */
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+}
+
+#overviews {
+    margin-left: 10px;
+    font-family: Arial, sans-serif;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+.definition {
+    margin-top: 1em;
+}
+
+
+#bar {
+    /* 把overview那部分的float清除掉，否则会往上移 */
+    clear: right;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    background-color: #A2B964;
+    padding: 5px 0 5px 0;
+}
+
+#check {
+    /*The W3C images are always present at the page's very bottom-right corner, 
+    both when the page first appears and after any scrolling.*/
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
